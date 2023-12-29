@@ -3,7 +3,7 @@ import React from "react";
 
 export const OurVision = () => {
   return (
-    <section className="mt-10" id={SectionIds.OurVisioni}>
+    <section className="mt-20" id={SectionIds.OurVisioni}>
       <div className="bg-accent p-3 rounded-lg">
         <h2 className="text-3xl md:text-5xl text-center font-bold">
           Our Vision

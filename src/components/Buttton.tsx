@@ -1,12 +1,22 @@
-import React from "react";
+import { useMergeTailwindCss } from "@/hooks/useMergeTailwindCss";
+import React, { ButtonHTMLAttributes } from "react";
 
-type Props = {
-  children: React.ReactNode;
-};
+export const Buttton = (
+  props: React.ButtonHTMLAttributes<HTMLButtonElement>,
+) => {
+  const { children, className, ...prop } = props;
 
-export const Buttton = ({ children }: Props) => {
+  const baseClassName = "bg-blue-500 text-white px-3 py-1 rounded-md";
+
+  const mergeClass = useMergeTailwindCss();
+
   return (
-    <button className="bg-blue-500 text-white px-3 py-1 rounded-md">
+    <button
+      className={
+        className ? mergeClass(baseClassName, className) : baseClassName
+      }
+      {...prop}
+    >
       {children}
     </button>
   );

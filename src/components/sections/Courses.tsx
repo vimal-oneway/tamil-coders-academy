@@ -6,9 +6,9 @@ export const Courses = () => {
   return (
     <section
       id={SectionIds.Courses}
-      className="my-40 flex justify-between items-center gap-8"
+      className="my-20 lg:my-40 flex-col lg:flex-row flex justify-between items-center gap-8"
     >
-      <div className="w-full">
+      <div className="w-full hidden lg:block">
         <Image
           src={"/mern.png"}
           alt="Mern stack devlopment"
@@ -16,10 +16,20 @@ export const Courses = () => {
           height={"550"}
         />
       </div>
+
       <div className="w-full">
         <h2 className="text-2xl md:text-4xl font-bold">
           Join Full Stack Course
         </h2>
+        <div className="w-full block lg:hidden my-5">
+          <Image
+            src={"/mern.png"}
+            alt="Mern stack devlopment"
+            width={"550"}
+            height={"550"}
+          />
+        </div>
+
         <p className="mt-2">
           Ready to master both frontend and backend? Our Full Stack Course is
           your ticket to becoming a well-rounded web developer!

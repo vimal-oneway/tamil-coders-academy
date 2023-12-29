@@ -32,22 +32,6 @@ export const Footer = () => {
             ))}
           </ul>
         </div>
-        <div>
-          <h3 className="text-lg md:text-xl text-center md:text-start font-semibold">
-            Contact Us{" "}
-          </h3>
-          <form className="mt-3 flex gap-2 items-center w-full">
-            <input
-              placeholder="Email"
-              type="email"
-              ref={emailRef}
-              className="px-3 py-1 focus:outline-none border-2 border-secondary w-3/5 rounded-lg"
-              name="email"
-              id="email"
-            />
-            <Buttton>Submit</Buttton>
-          </form>
-        </div>
       </section>
     </div>
   );

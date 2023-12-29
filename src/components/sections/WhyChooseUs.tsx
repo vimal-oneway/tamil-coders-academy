@@ -13,7 +13,7 @@ export const WhyChooseUs = () => {
 
       <ul className="mt-7 list-disc flex justify-center flex-wrap  w-full gap-10">
         {data.map(({ title, discription }, index) => (
-          <li key={index + title} className="w-2/5 mx-4">
+          <li key={index + title} className="w-full lg:w-2/5 mx-4">
             <span className="text-blue-500 mr-1">{title}</span>
             <span>{discription}</span>
           </li>

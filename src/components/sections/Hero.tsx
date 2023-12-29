@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className="min-h-[70dvh] min-h-[70vh] flex justify-between items-center">
-      <div className="w-3/4">
+    <section className="min-h-[70dvh] min-h-[70vh] flex flex-col-reverse mt-10 lg:mt-0 gap-8 lg:gap-0 lg:flex-row justify-between items-center">
+      <div className="w-full lg:w-3/4">
         <h1 className="font-bold text-3xl md:text-5xl">Tamil Coders Academy</h1>
         <p className="mt-2">
           Explore advanced programming in Tamil - breaking language barriers.
